@@ -26,6 +26,10 @@ import CssBaseline from "@mui/material/CssBaseline";
 import theme from "assets/theme";
 import Presentation from "layouts/pages/presentation";
 
+import "./assets/css/styles.css";
+
+import "./assets/fonts/LetterKidsDemo.ttf";
+
 // Material Kit 2 React routes
 import routes from "routes";
 
