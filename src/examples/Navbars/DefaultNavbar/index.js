@@ -143,10 +143,10 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
                     {col.collapse.map((item) => (
                       <MKTypography
                         key={item.name}
-                        component={item.route ? Link : MuiLink}
+                        component={Link}
                         to={item.route ? item.route : ""}
                         href={item.href ? item.href : (e) => e.preventDefault()}
-                        target={item.href ? "_blank" : ""}
+                        // target={item.href ? "_blank" : ""}
                         rel={item.href ? "noreferrer" : "noreferrer"}
                         minWidth="11.25rem"
                         display="block"
@@ -551,7 +551,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
 
 // Setting default values for the props of DefaultNavbar
 DefaultNavbar.defaultProps = {
-  brand: "Material Kit 2",
+  brand: "Mis Angelitos",
   transparent: false,
   light: false,
   action: false,
@@ -569,8 +569,8 @@ DefaultNavbar.propTypes = {
   action: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.shape({
-      type: PropTypes.oneOf(["external", "internal"]).isRequired,
-      route: PropTypes.string.isRequired,
+      type: PropTypes.oneOf(["external", "internal"]),
+      route: PropTypes.string,
       color: PropTypes.oneOf([
         "primary",
         "secondary",
@@ -583,7 +583,7 @@ DefaultNavbar.propTypes = {
         "default",
         "white",
       ]),
-      label: PropTypes.string.isRequired,
+      label: PropTypes.string,
     }),
   ]),
   sticky: PropTypes.bool,
