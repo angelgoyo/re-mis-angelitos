@@ -79,7 +79,7 @@ function Download() {
             </MKTypography>
             <MKTypography
               component={MuiLink}
-              href="wa.me/573108947369"
+              href="https://wa.me/573108947369"
               target="_blank"
               rel="noreferrer"
               variant="body2"
