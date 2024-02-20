@@ -29,7 +29,7 @@ export default {
   menus: [
     {
       name: "compañia",
-      items: [{ name: "contactanos", route: "/presentation#contactanos" }],
+      items: [{ name: "contactanos", route: "/#contactanos" }],
     },
   ],
   copyright: (
