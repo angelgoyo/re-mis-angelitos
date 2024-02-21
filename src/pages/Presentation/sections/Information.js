@@ -59,8 +59,8 @@ function Information() {
                 description="Atención todos los días"
                 action={{
                   type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  route: "/",
+                  label: "horarios",
                 }}
               />
             </RotatingCard>
