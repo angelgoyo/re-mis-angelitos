@@ -36,7 +36,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/Presentacion2.png";
+import bgImage from "assets/images/Presentacion.jpg";
 import Download from "pages/Presentation/sections/Download";
 
 function Presentation() {
@@ -59,6 +59,7 @@ function Presentation() {
             <MKTypography
               variant="h2"
               color="primary"
+              textAlign="center"
               mt={-6}
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({

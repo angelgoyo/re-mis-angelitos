@@ -71,11 +71,9 @@ function Download() {
               mb={1}
             >
               Dirección: Calle 45A - #15A - 31{" "}
-              <i
-                className="fa fa-map-marker
-"
-                style={{ fontSize: "1.50rem" }}
-              />
+              <MKTypography variant="body2" color="white">
+                <i className="fa fa-map-marker" style={{ fontSize: "1.50rem" }} />
+              </MKTypography>
             </MKTypography>
             <MKTypography
               component={MuiLink}
@@ -86,7 +84,10 @@ function Download() {
               color="white"
               mb={1}
             >
-              Telefóno: 310-8947369 <i className="fa fa-whatsapp" style={{ fontSize: "1.50rem" }} />
+              Telefóno: 310-8947369
+              <MKTypography variant="body2" color="white">
+                <i className="fa fa-whatsapp" style={{ fontSize: "1.50rem" }} />
+              </MKTypography>
             </MKTypography>
             <MKTypography
               component={MuiLink}
@@ -98,7 +99,9 @@ function Download() {
               mb={1}
             >
               Correo: angelyeinel22@gmail.com{" "}
-              <i className="fa fa-envelope-o" style={{ fontSize: "1.50rem" }} />
+              <MKTypography variant="body2" color="white">
+                <i className="fa fa-envelope-o" style={{ fontSize: "1.50rem" }} />
+              </MKTypography>
             </MKTypography>
           </Grid>
         </Container>

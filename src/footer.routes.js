@@ -6,7 +6,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import MKTypography from "components/MKTypography";
 
 // Images
-import logoCT from "assets/images/logo-ct-dark.png";
+import logoCT from "assets/images/star-icon-200x190.png";
 
 const date = new Date().getFullYear();
 
