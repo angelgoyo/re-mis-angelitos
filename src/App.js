@@ -49,7 +49,7 @@ export default function App() {
       }
 
       if (route.route) {
-        return <Route path={route.route} element={route.component} />;
+        return <Route path={route.route} element={route.component} key={route.key} />;
       }
 
       return null;
