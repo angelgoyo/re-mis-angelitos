@@ -15,11 +15,12 @@ Coded by www.creative-tim.com
 
 // @mui material components
 import Grid from "@mui/material/Grid";
+import MuiLink from "@mui/material/Link";
+import Container from "@mui/material/Container";
+import Card from "@mui/material/Card";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
@@ -31,114 +32,152 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Image
-import bgImage from "assets/images/illustrations/illustration-reset.jpg";
+import bgImage1 from "assets/images/Presentacion.jpg";
+import bgImage from "assets/images/shapes/waves-white.svg";
 
 function ContactUs() {
   return (
     <>
-      <MKBox position="fixed" top="0.5rem" width="100%">
-        <DefaultNavbar
-          routes={routes}
-          action={{
-            type: "external",
-            route: "https://www.creative-tim.com/product/material-kit-react",
-            label: "free download",
-            color: "info",
-          }}
-        />
+      <DefaultNavbar routes={routes} />
+      <MKBox
+        minHeight="75vh"
+        width="100%"
+        sx={{
+          backgroundImage: `url(${bgImage1})`,
+          backgroundSize: "cover",
+          backgroundPosition: "top",
+          display: "grid",
+          placeItems: "center",
+        }}
+      >
+        <Container>
+          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+            <MKTypography
+              variant="h2"
+              color="primary"
+              textAlign="center"
+              mt={-6}
+              mb={1}
+              sx={({ breakpoints, typography: { size } }) => ({
+                [breakpoints.down("md")]: {
+                  fontSize: size["3xl"],
+                },
+              })}
+            >
+              Contactanos
+            </MKTypography>
+          </Grid>
+        </Container>
       </MKBox>
-      <Grid container spacing={3} alignItems="center">
-        <Grid item xs={12} lg={6}>
+      <Card
+        sx={{
+          p: 2,
+          mx: { xs: 2, lg: 3 },
+          mt: -8,
+          mb: 4,
+          backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
+          backdropFilter: "saturate(200%) blur(30px)",
+          boxShadow: ({ boxShadows: { xxl } }) => xxl,
+        }}
+      >
+        <MKBox component="section" py={{ xs: 0, sm: 12 }}>
           <MKBox
-            display={{ xs: "none", lg: "flex" }}
-            width="calc(100% - 2rem)"
-            height="calc(100vh - 2rem)"
-            borderRadius="lg"
-            ml={2}
-            mt={2}
-            sx={{ backgroundImage: `url(${bgImage})` }}
-          />
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={10}
-          md={7}
-          lg={6}
-          xl={4}
-          ml={{ xs: "auto", lg: 6 }}
-          mr={{ xs: "auto", lg: 6 }}
-        >
-          <MKBox
-            bgColor="white"
+            variant="gradient"
+            bgColor="error"
+            opacity={0.8}
+            position="relative"
             borderRadius="xl"
-            shadow="lg"
-            display="flex"
-            flexDirection="column"
-            justifyContent="center"
-            mt={{ xs: 20, sm: 18, md: 20 }}
-            mb={{ xs: 20, sm: 18, md: 20 }}
-            mx={3}
+            sx={{ overflow: "hidden" }}
           >
             <MKBox
-              variant="gradient"
-              bgColor="info"
-              coloredShadow="info"
-              borderRadius="lg"
-              p={2}
-              mx={2}
-              mt={-3}
-            >
-              <MKTypography variant="h3" color="white">
-                Contact us
-              </MKTypography>
-            </MKBox>
-            <MKBox p={3}>
-              <MKTypography variant="body2" color="text" mb={3}>
-                For further questions, including partnership opportunities, please email
-                hello@creative-tim.com or contact using our contact form.
-              </MKTypography>
-              <MKBox width="100%" component="form" method="post" autoComplete="off">
-                <Grid container spacing={3}>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      variant="standard"
-                      label="Full Name"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      type="email"
-                      variant="standard"
-                      label="Email"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <MKInput
-                      variant="standard"
-                      label="What can we help you?"
-                      placeholder="Describe your problem in at least 250 characters"
-                      InputLabelProps={{ shrink: true }}
-                      multiline
-                      fullWidth
-                      rows={6}
-                    />
-                  </Grid>
-                </Grid>
-                <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
-                  <MKButton type="submit" variant="gradient" color="info">
-                    Send Message
-                  </MKButton>
-                </Grid>
-              </MKBox>
-            </MKBox>
+              component="img"
+              src={bgImage}
+              alt="pattern-lines"
+              position="absolute"
+              top={0}
+              left={0}
+              width="100%"
+              zIndex={1}
+              opacity={0.2}
+            />
+            <Container sx={{ position: "relative", zIndex: 2, py: 12 }}>
+              <Grid
+                container
+                item
+                xs={6}
+                lg={4}
+                md={5}
+                justifyContent="center"
+                mx="auto"
+                textAlign="center"
+              >
+                <MKTypography
+                  component={MuiLink}
+                  href="https://www.google.com/maps/place/Refuerzo+escolar+Mis+Angelitos/@6.2318154,-75.5448417,15z/data=!4m15!1m8!3m7!1s0x8e44292f14b41b05:0x2cbbdd9c805b3865!2sRefuerzo+escolar+Mis+Angelitos!8m2!3d6.2318154!4d-75.5448417!10e1!16s%2Fg%2F11vsvzl_4n!3m5!1s0x8e44292f14b41b05:0x2cbbdd9c805b3865!8m2!3d6.2318154!4d-75.5448417!16s%2Fg%2F11vsvzl_4n?entry=ttu"
+                  target="_blank"
+                  rel="noreferrer"
+                  variant="body2"
+                  color="white"
+                  mb={1}
+                >
+                  <MKTypography variant="body2" color="white">
+                    <i className="fa fa-map-marker" style={{ fontSize: "1.50rem" }} />
+                  </MKTypography>
+                  Dirección: Calle 45A - #15A - 31{" "}
+                </MKTypography>
+                <MKTypography
+                  component={MuiLink}
+                  href="https://wa.me/573108947369"
+                  target="_blank"
+                  rel="noreferrer"
+                  variant="body2"
+                  color="white"
+                  mb={1}
+                >
+                  <MKTypography variant="body2" color="white">
+                    <i className="fa fa-whatsapp" style={{ fontSize: "1.50rem" }} />
+                  </MKTypography>
+                  Telefóno: 310-8947369
+                </MKTypography>
+                <MKTypography
+                  component={MuiLink}
+                  href="mailto:angelyeinel22@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  variant="body2"
+                  color="white"
+                  mb={1}
+                >
+                  <MKTypography variant="body2" color="white">
+                    <i className="fa fa-envelope-o" style={{ fontSize: "1.50rem" }} />
+                  </MKTypography>
+                  Correo: angelyeinel22@gmail.com{" "}
+                </MKTypography>
+              </Grid>
+            </Container>
           </MKBox>
-        </Grid>
-      </Grid>
+        </MKBox>
+        <MKBox pt={4} pb={6}>
+          <Container>
+            <Grid container spacing={3}>
+              <Grid
+                item
+                xs={12}
+                lg={12}
+                ml="auto"
+                sx={{ textAlign: { xs: "center", lg: "center" } }}
+              >
+                <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
+                  Gracias por confiar en nosotros!
+                </MKTypography>
+                <MKTypography variant="body1" color="text">
+                  Lo hacemos con el mayor de los gustos
+                </MKTypography>
+              </Grid>
+            </Grid>
+          </Container>
+        </MKBox>
+      </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>
