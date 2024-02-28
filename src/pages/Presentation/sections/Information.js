@@ -26,6 +26,8 @@ import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
 import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
+import ContactUs from "layouts/pages/landing-pages/contact-us";
+
 // Images
 import bgFront from "assets/images/pexels-lina-kivaka.jpg";
 import bgBack from "assets/images/pexels-lina.jpg";
@@ -56,11 +58,12 @@ function Information() {
                 color="error"
                 image={bgBack}
                 title="Horarios flexibles"
-                description="Atención todos los días"
+                description="Atención de lunes a sábado (mañana 9:00 am a 11:00 am) lunes a viernes (tarde 2:00 pm a 5:30 pm) "
                 action={{
                   type: "internal",
-                  route: "/",
-                  label: "horarios",
+                  route: "pages/landing-pages/contact-us",
+                  component: <ContactUs />,
+                  label: "contactanos",
                 }}
               />
             </RotatingCard>

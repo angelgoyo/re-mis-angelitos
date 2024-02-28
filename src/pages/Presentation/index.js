@@ -37,7 +37,7 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/Presentacion.jpg";
-import Download from "pages/Presentation/sections/Download";
+// import Download from "pages/Presentation/sections/Download";
 
 function Presentation() {
   return (
@@ -94,28 +94,6 @@ function Presentation() {
         }}
       >
         <Information />
-        <a id="contactanos" className="anchor-link" />
-        <Download />
-        <MKBox pt={4} pb={6}>
-          <Container>
-            <Grid container spacing={3}>
-              <Grid
-                item
-                xs={12}
-                lg={12}
-                ml="auto"
-                sx={{ textAlign: { xs: "center", lg: "center" } }}
-              >
-                <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
-                  Gracias por confiar en nosotros!
-                </MKTypography>
-                <MKTypography variant="body1" color="text">
-                  Lo hacemos con el mayor de los gustos
-                </MKTypography>
-              </Grid>
-            </Grid>
-          </Container>
-        </MKBox>
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
