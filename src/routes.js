@@ -33,7 +33,7 @@ const routes = [
         collapse: [
           {
             name: "contactanos",
-            route: "pages/landing-pages/contact-us",
+            route: "/contact-us",
             component: <ContactUs />,
           },
         ],
