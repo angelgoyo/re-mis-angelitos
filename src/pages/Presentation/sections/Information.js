@@ -61,7 +61,7 @@ function Information() {
                 description="Atención de lunes a sábado (mañana 9:00 am a 11:00 am) lunes a viernes (tarde 2:00 pm a 5:30 pm) "
                 action={{
                   type: "internal",
-                  route: "pages/landing-pages/contact-us",
+                  route: "/contact-us",
                   component: <ContactUs />,
                   label: "contactanos",
                 }}

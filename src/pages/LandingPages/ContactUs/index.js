@@ -33,7 +33,7 @@ import footerRoutes from "footer.routes";
 
 // Image
 import bgImage1 from "assets/images/Presentacion.jpg";
-import bgImage from "assets/images/shapes/waves-white.svg";
+import bgImage from "assets/images/waves-white.svg";
 
 function ContactUs() {
   return (
