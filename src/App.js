@@ -16,7 +16,7 @@ Coded by www.creative-tim.com
 import { useEffect } from "react";
 
 // react-router components
-import { HashRouter as Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 
 // @mui material components
 import { ThemeProvider } from "@mui/material/styles";
