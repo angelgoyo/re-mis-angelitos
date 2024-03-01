@@ -32,7 +32,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Image
-import bgImage1 from "assets/images/Presentacion.jpg";
+import bgImage1 from "assets/images/Presentacion.png";
 import bgImage from "assets/images/waves-white.svg";
 
 function ContactUs() {
