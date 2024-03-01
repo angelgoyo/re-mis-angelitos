@@ -22,7 +22,7 @@ export default {
   socials: [
     {
       icon: <FacebookIcon />,
-      link: "https://www.facebook.com/",
+      link: "https://www.facebook.com/profile.php?id=61557016286522&mibextid=ZbWKwL",
     },
     {
       icon: <InstagramIcon />,

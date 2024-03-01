@@ -36,7 +36,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/Presentacion.jpg";
+import bgImage from "assets/images/Presentacion.png";
 // import Download from "pages/Presentation/sections/Download";
 
 function Presentation() {
@@ -55,20 +55,17 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+          <Grid container item xs={12} lg={12} justifyContent="center" mx="auto">
             <MKTypography
               variant="h2"
-              color="primary"
+              color="warning"
+              fontWeight="bold"
               textAlign="center"
               mt={-6}
               mb={1}
-              sx={({ breakpoints, typography: { size } }) => ({
-                [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
-                },
-              })}
+              px={{ xs: 6, lg: 12 }}
             >
-              Centro de Refuerzo Mis Angelitos
+              Centro de Refuerzo Escolar Mis Angelitos
             </MKTypography>
             <MKTypography
               variant="h4"
@@ -77,7 +74,7 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Refuerzo escolar para niñas y niños.
+              Apoyo escolar para niñas y niños.
             </MKTypography>
           </Grid>
         </Container>
