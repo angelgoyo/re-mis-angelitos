@@ -36,8 +36,8 @@ import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 
 // Material Kit 2 React example components
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import SimpleFooter from "examples/Footers/SimpleFooter";
+import DefaultNavbar from "layouts/Navbars/DefaultNavbar";
+import SimpleFooter from "layouts/Footers/SimpleFooter";
 
 // Material Kit 2 React page layout routes
 import routes from "routes";

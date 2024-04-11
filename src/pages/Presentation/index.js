@@ -23,12 +23,13 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 //import MKSocialButton from "components/MKSocialButton";
 
-// Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+// Material Kit 2 React layouts
+import DefaultNavbar from "layouts/Navbars/DefaultNavbar";
+import DefaultFooter from "layouts/Footers/DefaultFooter";
 
 // Presentation page sections
 import Information from "pages/Presentation/sections/Information";
+import AboutUsShort from "pages/Presentation/sections/AboutUsShort";
 // import Testimonials from "pages/Presentation/sections/Testimonials";
 
 // Routes
@@ -42,7 +43,7 @@ import bgImage from "assets/images/Presentacion.png";
 function Presentation() {
   return (
     <>
-      <DefaultNavbar routes={routes} />
+      <DefaultNavbar routes={routes} sticky />
       <MKBox
         minHeight="75vh"
         width="100%"
@@ -90,6 +91,7 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
+        <AboutUsShort />
         <Information />
       </Card>
       <MKBox pt={6} px={1} mt={6}>

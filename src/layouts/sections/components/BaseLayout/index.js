@@ -24,10 +24,10 @@ import Grid from "@mui/material/Grid";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-// Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import CenteredFooter from "examples/Footers/CenteredFooter";
-import Breadcrumbs from "examples/Breadcrumbs";
+// Material Kit 2 React layouts
+import DefaultNavbar from "layouts/Navbars/DefaultNavbar";
+import CenteredFooter from "layouts/Footers/CenteredFooter";
+import Breadcrumbs from "layouts/Breadcrumbs";
 
 // Routes
 import routes from "routes";

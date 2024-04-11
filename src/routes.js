@@ -17,28 +17,22 @@ Coded by www.creative-tim.com
 import Icon from "@mui/material/Icon";
 
 // Pages
-// import AboutUs from "layouts/pages/landing-pages/about-us";
+import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 //import Presentation from "pages/Presentation";
 
 const routes = [
   {
-    name: "Compañia",
+    name: "nosotros",
     icon: <Icon>school</Icon>,
-    columns: 1,
-    rowsPerColumn: 1,
-    collapse: [
-      {
-        name: "Compañia",
-        collapse: [
-          {
-            name: "contactanos",
-            route: "/contact-us",
-            component: <ContactUs />,
-          },
-        ],
-      },
-    ],
+    route: "/about-us",
+    component: <AboutUs />,
+  },
+  {
+    name: "contactanos",
+    icon: <Icon>map</Icon>,
+    route: "/contact-us",
+    component: <ContactUs />,
   },
 ];
 
