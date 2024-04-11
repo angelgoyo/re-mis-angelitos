@@ -23,9 +23,9 @@ import Card from "@mui/material/Card";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-// Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+// Material Kit 2 React layouts
+import DefaultNavbar from "layouts/Navbars/DefaultNavbar";
+import DefaultFooter from "layouts/Footers/DefaultFooter";
 
 // Routes
 import routes from "routes";
@@ -38,7 +38,7 @@ import bgImage from "assets/images/waves-white.svg";
 function ContactUs() {
   return (
     <>
-      <DefaultNavbar routes={routes} />
+      <DefaultNavbar routes={routes} sticky />
       <MKBox
         minHeight="75vh"
         width="100%"
@@ -54,15 +54,21 @@ function ContactUs() {
           <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
             <MKTypography
               variant="h2"
-              color="primary"
+              color="warning"
+              fontWeight="bold"
               textAlign="center"
               mt={-6}
               mb={1}
-              sx={({ breakpoints, typography: { size } }) => ({
-                [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
-                },
-              })}
+              px={{ xs: 6, lg: 12 }}
+            >
+              Centro de Refuerzo Escolar Mis Angelitos
+            </MKTypography>
+            <MKTypography
+              variant="h4"
+              color="primary"
+              textAlign="center"
+              px={{ xs: 6, lg: 12 }}
+              mt={1}
             >
               Contactanos
             </MKTypography>

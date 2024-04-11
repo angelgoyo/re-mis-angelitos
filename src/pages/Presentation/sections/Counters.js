@@ -21,8 +21,8 @@ import Divider from "@mui/material/Divider";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 
-// Material Kit 2 React examples
-import DefaultCounterCard from "examples/Cards/CounterCards/DefaultCounterCard";
+// Material Kit 2 React layouts
+import DefaultCounterCard from "layouts/Cards/CounterCards/DefaultCounterCard";
 
 function Counters() {
   return (

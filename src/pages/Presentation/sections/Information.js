@@ -20,11 +20,11 @@ import Grid from "@mui/material/Grid";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 
-// Material Kit 2 React examples
-import RotatingCard from "examples/Cards/RotatingCard";
-import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
-import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
-import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
+// Material Kit 2 React layouts
+import RotatingCard from "layouts/Cards/RotatingCard";
+import RotatingCardFront from "layouts/Cards/RotatingCard/RotatingCardFront";
+import RotatingCardBack from "layouts/Cards/RotatingCard/RotatingCardBack";
+import DefaultInfoCard from "layouts/Cards/InfoCards/DefaultInfoCard";
 
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 
@@ -36,9 +36,9 @@ let iconColor = "primary";
 
 function Information() {
   return (
-    <MKBox component="section" py={6} my={6}>
+    <MKBox component="section" py={2} my={2} mb={4}>
       <Container>
-        <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
+        <Grid container item xs={11} spacing={1} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
             <RotatingCard>
               <RotatingCardFront
@@ -47,9 +47,9 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Todas las edades
+                    Toca para ver
                     <br />
-                    hasta 6to grado
+                    Nuestros horarios
                   </>
                 }
                 description=""
@@ -58,7 +58,7 @@ function Information() {
                 color="error"
                 image={bgBack}
                 title="Horarios flexibles"
-                description="Atención de lunes a sábado (mañana 9:00 am a 11:00 am) lunes a viernes (tarde 2:00 pm a 5:30 pm) "
+                description="Atención de lunes a sábado (mañana 9:00 am a 12:00 am) lunes a viernes (tarde 2:00 pm a 6:00 pm) "
                 action={{
                   type: "internal",
                   route: "/contact-us",
