@@ -56,7 +56,7 @@ function Team() {
                 image={team1}
                 name="Profe Yura"
                 position={{ color: "info", label: "Licenciada en educación" }}
-                description="Amplia experiencia en la enseñanza de los peques en edades desde preescolar hasta primaria"
+                description="Amplia experiencia en la enseñanza de los peques en edades desde jardin hasta primaria"
               />
             </MKBox>
           </Grid>

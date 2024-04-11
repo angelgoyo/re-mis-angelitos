@@ -26,7 +26,7 @@ function Information() {
     <MKBox component="section" py={6} my={6}>
       <Container>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
-          <MKTypography variant="h2">Acerca de nosotros</MKTypography>
+          <MKTypography variant="h2">Nosotros</MKTypography>
           <MKTypography variant="body1" color="text" mb={2}>
             Somos un Centro de refuerzo escolar para peques en edades desde jardin hasta 6to grado,
             atendido por una licenciada en educación básica primaria, con diplomados en educación

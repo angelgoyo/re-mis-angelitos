@@ -67,12 +67,12 @@ function AboutUs() {
             </MKTypography>
             <MKTypography
               variant="h4"
-              color="dark"
+              color="primary"
               textAlign="center"
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Apoyo escolar para niñas y niños.
+              Acerca de Nosotros
             </MKTypography>
           </Grid>
         </Container>
