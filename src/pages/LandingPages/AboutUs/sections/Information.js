@@ -29,7 +29,7 @@ function Information() {
           <MKTypography variant="h2">Acerca de nosotros</MKTypography>
           <MKTypography variant="body1" color="text" mb={2}>
             Somos un Centro de refuerzo escolar para peques en edades desde jardin hasta 6to grado,
-            atendido por una licenciada en educación básica en primaria, con diplomados en educación
+            atendido por una licenciada en educación básica primaria, con diplomados en educación
             inicial y pedagogía infantil, brindando un ambiente de atención individual teniendo
             enfasis en el apoyo en lectura, escritura, aritmetica entre otros.
           </MKTypography>

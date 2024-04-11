@@ -53,16 +53,7 @@ function AboutUs() {
         }}
       >
         <Container>
-          <Grid
-            container
-            item
-            xs={12}
-            lg={8}
-            justifyContent="center"
-            alignItems="center"
-            flexDirection="column"
-            sx={{ mx: "auto", textAlign: "center" }}
-          >
+          <Grid container item xs={12} lg={12} justifyContent="center" mx="auto">
             <MKTypography
               variant="h2"
               color="warning"
