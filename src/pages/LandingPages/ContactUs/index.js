@@ -32,49 +32,20 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Image
-import bgImage1 from "assets/images/Presentacion.png";
 import bgImage from "assets/images/waves-white.svg";
+import { ElfsightWidget } from "react-elfsight-widget";
+import Header from "layouts/Header";
 
 function ContactUs() {
   return (
     <>
       <DefaultNavbar routes={routes} sticky />
-      <MKBox
-        minHeight="75vh"
-        width="100%"
-        sx={{
-          backgroundImage: `url(${bgImage1})`,
-          backgroundSize: "cover",
-          backgroundPosition: "top",
-          display: "grid",
-          placeItems: "center",
+      <Header
+        content={{
+          title: "Centro de Refuerzo Escolar Mis Angelitos",
+          subtitle: "Contactanos",
         }}
-      >
-        <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
-            <MKTypography
-              variant="h2"
-              color="warning"
-              fontWeight="bold"
-              textAlign="center"
-              mt={-6}
-              mb={1}
-              px={{ xs: 6, lg: 12 }}
-            >
-              Centro de Refuerzo Escolar Mis Angelitos
-            </MKTypography>
-            <MKTypography
-              variant="h4"
-              color="primary"
-              textAlign="center"
-              px={{ xs: 6, lg: 12 }}
-              mt={1}
-            >
-              Contactanos
-            </MKTypography>
-          </Grid>
-        </Container>
-      </MKBox>
+      />
       <Card
         sx={{
           p: 2,
@@ -166,6 +137,9 @@ function ContactUs() {
         <MKBox pt={4} pb={6}>
           <Container>
             <Grid container spacing={3}>
+              <Grid>
+                <ElfsightWidget widgetId="c2a6a2c0-d53c-4867-9d1a-02d618120982" />
+              </Grid>
               <Grid
                 item
                 xs={12}

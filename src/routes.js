@@ -27,12 +27,14 @@ const routes = [
     icon: <Icon>school</Icon>,
     route: "/about-us",
     component: <AboutUs />,
+    key: "nosotros",
   },
   {
     name: "contactanos",
     icon: <Icon>map</Icon>,
     route: "/contact-us",
     component: <ContactUs />,
+    key: "contactanos",
   },
 ];
 
