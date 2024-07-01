@@ -14,13 +14,10 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
 //import MKSocialButton from "components/MKSocialButton";
 
 // Material Kit 2 React layouts
@@ -37,49 +34,19 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/Presentacion.png";
+import Header from "layouts/Header";
 // import Download from "pages/Presentation/sections/Download";
 
 function Presentation() {
   return (
     <>
       <DefaultNavbar routes={routes} sticky />
-      <MKBox
-        minHeight="75vh"
-        width="100%"
-        sx={{
-          backgroundImage: `url(${bgImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "top",
-          display: "grid",
-          placeItems: "center",
+      <Header
+        content={{
+          title: "Centro de Refuerzo Escolar Mis Angelitos",
+          subtitle: "Apoyo escolar para niñas y niños.",
         }}
-      >
-        <Container>
-          <Grid container item xs={12} lg={12} justifyContent="center" mx="auto">
-            <MKTypography
-              variant="h2"
-              color="warning"
-              fontWeight="bold"
-              textAlign="center"
-              mt={-6}
-              mb={1}
-              px={{ xs: 6, lg: 12 }}
-            >
-              Centro de Refuerzo Escolar Mis Angelitos
-            </MKTypography>
-            <MKTypography
-              variant="h4"
-              color="dark"
-              textAlign="center"
-              px={{ xs: 6, lg: 12 }}
-              mt={1}
-            >
-              Apoyo escolar para niñas y niños.
-            </MKTypography>
-          </Grid>
-        </Container>
-      </MKBox>
+      />
       <Card
         sx={{
           p: 2,
