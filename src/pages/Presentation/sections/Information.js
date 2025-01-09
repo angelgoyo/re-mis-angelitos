@@ -58,7 +58,7 @@ function Information() {
                 color="error"
                 image={bgBack}
                 title="Horarios flexibles"
-                description="Atención de lunes a sábado (mañana 9:00 am a 12:00 am) lunes a viernes (tarde 2:00 pm a 6:00 pm) "
+                description="Atención de lunes a viernes (4:00 pm a 6:30 pm) sábado (10:00 am a 3:00 pm)  "
                 action={{
                   type: "internal",
                   route: "/contact-us",
